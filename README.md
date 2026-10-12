@@ -1,6 +1,6 @@
 # docker-init — Démo Docker : deux applications Java, un volume partagé
 
-Démonstration pédagogique : deux conteneurs indépendants issus d'**une seule image** échangent un PDF via un **volume Docker nommé**.
+Démonstration  : deux conteneurs indépendants issus d'**une seule image** échangent un PDF via un **volume Docker nommé**.
 
 ## Prérequis
 
