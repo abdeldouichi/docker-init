@@ -5,7 +5,7 @@ WORKDIR /app
 COPY jars/produce-pdf.jar jars/consume-pdf.jar /app/
 COPY entrypoint.sh /app/entrypoint.sh
 
-# Dossier partagé (monté comme volume nommé) et chemin commun aux deux applications
+# Dossier partagé (monté comme bind mount, ex. ./output) et chemin commun aux deux applications
 ENV OUTPUT_DIR=/app/output PDF_NAME=document.pdf
 RUN chmod +x /app/entrypoint.sh && mkdir -p /app/output
 VOLUME /app/output
